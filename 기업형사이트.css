@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    height: 145px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #999;
+}
+
+.header_logo h1 {
+    font: bold 40px 'arial';
+    padding-top: 14px;
+    letter-spacing: 2px;
+}
+.header_logo p {
+    font: bold 12px 'arial';
+    letter-spacing: 2px;
+    margin-top: -1px;
+} 
+
+.header_gnb ul {
+    margin-top: 39px;
+}
+.header_gnb ul li{
+    display: inline-block;
+}
+
+.header_gnb ul li a {
+    display: block;
+    font: bold 14px 'arial';
+    color: #999;
+    margin: 0px 16px;
+    letter-spacing: 1px;
+}
+.sp_h1 {
+    width: 20px;
+    height: 20px;
+}
+
+li{
+    list-style-type: none;
+  }
+  
+  #slideShow li img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* 보여줄 구간의 높이와 넓이 설정 */
+  #slideShow{
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;   
+    /*리스트 형식으로 이미지를 일렬로 
+    정렬할 것이기 때문에, 500px 밖으로 튀어 나간 이미지들은
+    hidden으로 숨겨줘야됨*/
+  }
+  
+  
+  .slides{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2500px; /* 슬라이드할 사진과 마진 총 넓이 */
+    transition: left 0.5s ease-out; 
+    /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
+  }
+  
+  /* 첫 번째 슬라이드 가운데에 정렬하기위해
+  첫번째 슬라이드만 margin-left조정 */
+  .slides li:first-child{
+    margin-left: 100px;
+  }
+  
+  /* 슬라이드들 옆으로 정렬 */
+  .slides li:not(:last-child){
+    float: left;
+    margin-right: 100px;
+  }
+  
+  .slides li{
+    float: left;
+  }
+  
+  .controller span{
+    position:absolute;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 50%;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+  
+  /* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+  .controller span:hover{
+    background-color: rgba(128, 128, 128, 0.11);
+  }
+  
+  .prev{
+    left: 10px;
+  }
+  
+  /* 이전 화살표에 마우스 커서가 올라가 있을때 
+  이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+  .prev:hover{
+    transform: translateX(-10px);
+  }
+  
+  .next{
+    right: 10px;
+  }
+  
+  /* 다음 화살표에 마우스 커서가 올라가 있을때 
+  이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+  .next:hover{
+    transform: translateX(10px);
+  }
+ 
+
+
+
+
+
+  .products h3{
+    font-size: 24px;
+    color: #545454;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .product.img {
+    height: 1000;
+  }
+  .product-list{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product{
+    width: 250px;
+    text-align: center;
+    display: block;
+    color: #545454;
+    text-decoration: none;
+    float: left;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+  }
+  .product1{
+    width: 250px;
+    text-align: center;
+    display: block;
+    color: #545454;
+    text-decoration: none;
+    float: left;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+  }
+  .product2{
+    width: 250px;
+    text-align: center;
+    display: block;
+    color: #545454;
+    text-decoration: none;
+    float: left;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: 150px;
+  }
+  
+  .product-name{
+    margin-top: 20px;
+    margin-bottom: 4px;
+    
+  }
+  .clearfix{
+    clear: both;
+  }
+
+  #wrap {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+    height: 110px; /* 내용물에 따라 알맞는 값 설정 */
+    bottom: 0px;
+    position: absolute;
+  }
+
+  section {
+    padding-bottom: 110px; /* footer의 height값과 동일 */
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #wrap {
+    min-height: 100vh;
+    position: relative;
+    width: 100%; 
+    background-color: #f2f2f2;
+  }
+  
+  section {
+    padding-bottom: 105px;
+  }
+  
+  footer {
+    width: 100%;
+    height: 90px;
+    bottom: 0px;
+    position: absolute;
+    border-top: 1px solid #c4c4c4;
+    padding-top: 15px;
+    color: #808080;
+    font-size: 11px;
+  }
+  
+  footer a {
+    display: inline-block;
+    margin: 0 20px 10px 20px;
+    color: #808080; font-size: 11px;
+  }
+  
+  footer a:visited {
+    color: #808080;
+  }
+  
+  footer p {
+    margin-top: 0; margin-bottom: 0;   
+  }
+  
+  footer p span {
+    display: inline-block;
+    margin-left: 20px;
+  }
